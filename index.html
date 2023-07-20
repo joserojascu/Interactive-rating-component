@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form>
+          <div class="star"><img src="images/icon-star.svg" alt="star" /></div>
+
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="stars">
+            <input type="radio" name="rating" id="star5" value="5" />
+            <label for="star5" class="rating-circle">5</label>
+            <input type="radio" name="rating" id="star4" value="4" />
+            <label for="star4" class="rating-circle">4</label>
+            <input type="radio" name="rating" id="star3" value="3" />
+            <label for="star3" class="rating-circle">3</label>
+            <input type="radio" name="rating" id="star2" value="2" />
+            <label for="star2" class="rating-circle">2</label>
+            <input type="radio" name="rating" id="star1" value="1" />
+            <label for="star1" class="rating-circle">1</label>
+          </div>
+          <button id="submitBtn" type="submit">SUBMIT</button>
+        </form>
+      </div>
+   
+      <div class="container-thank">
+        <img src="images/illustration-thank-you.svg" alt="thank" />
+        <p>You selected   <span id="selectedRating"> </span>  out of 5</p>
+
+        <h3>Thank you!</h3>
+
+        <span>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!</span
+        >
+      </div>
+    </div>
+  </body>
+
+</html>
